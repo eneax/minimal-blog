@@ -13,7 +13,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header />
+    <Header data={data} />
     <div
       style={{
         margin: '0 auto',
@@ -32,3 +32,14 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        desc
+      }
+    }
+  }
+`
