@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+import logo from '../images/logo.png'
+
+const Header = () => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -23,7 +25,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none'
           }}
         >
-          {siteTitle}
+          <img src={logo} alt='Minimal Blog Logo made by DesignEvo' />
         </Link>
       </h1>
     </div>
