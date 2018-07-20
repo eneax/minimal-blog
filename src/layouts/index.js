@@ -41,5 +41,10 @@ export const query = graphql`
         desc
       }
     }
+    background: imageSharp(id: {regex: "/bgPic.jpg/"}) {
+      sizes(maxWidth: 1240, grayscale: true) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `

@@ -1,11 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Img from 'gatsby-image'
 
 const IndexPage = ({ data }) => (
   <div>
     <h1>{data.site.siteMetadata.title}</h1>
-    <Img sizes={data.background.sizes} />
     <p>{data.site.siteMetadata.desc}</p>
   </div>
 )
@@ -18,11 +16,6 @@ export const query = graphql`
       siteMetadata {
         title
         desc
-      }
-    }
-    background: imageSharp(id: {regex: "/bgPic.jpg/"}) {
-      sizes(maxWidth: 1240) {
-        ...GatsbyImageSharpSizes
       }
     }
   }
