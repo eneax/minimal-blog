@@ -1,5 +1,5 @@
 ---
-title: 'Welcome to the new clean and minimal blog'
+title: 'Welcome to the clean and minimal blog'
 date: 2018-07-21
 ---
 
