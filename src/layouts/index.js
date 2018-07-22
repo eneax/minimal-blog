@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header/index'
 import './index.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location }) => (
   <div>
     <Helmet
       meta={[
@@ -13,7 +13,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header data={data} />
+    <Header data={data} location={location}/>
     <div
       style={{
         margin: '0 auto',
