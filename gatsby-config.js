@@ -3,6 +3,7 @@ module.exports = {
     title: 'Minimal Blog',
     desc: 'Clean and minimal blog built with Gatsby.js',
   },
+  pathPrefix: "/minimal-blog",
   plugins: [
     'gatsby-plugin-react-helmet', 
     'gatsby-plugin-styled-components',
