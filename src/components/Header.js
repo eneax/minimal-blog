@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import logo from '../../images/logo.png'
+import logo from '../images/logo.png'
 
 const HeaderWrapper = styled.div`
   background: rgba(0, 0, 0, .2);
