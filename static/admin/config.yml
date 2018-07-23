@@ -3,6 +3,7 @@ backend:
   repo: eneax/minimal-blog
 
 media_folder: static/assets
+public_folder: /assets/
 
 collections:
   - name: post
