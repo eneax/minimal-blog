@@ -5,7 +5,7 @@ import PostListing from '../components/Posts/PostListing'
 const IndexPage = ({ data }) => (
   <div>
     <h2>Posts</h2>
-    {data.allMarkdownRemark.edges.map(({node}) => (
+    {data.allContentfulBlogPost.edges.map(({node}) => (
       <PostListing key={node.id} post={node} />
     ))}
   </div>
@@ -19,6 +19,21 @@ export const query = graphql`
       siteMetadata {
         title
         desc
+      }
+    }
+    allContentfulBlogPost {
+      edges {
+        node {
+          id
+          title
+          slug
+          body {
+            childMarkdownRemark {
+              excerpt
+            }
+          }
+          createdAt(formatString: "MMMM DD, YYYY")
+        }
       }
     }
   }
