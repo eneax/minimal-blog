@@ -28,14 +28,14 @@ module.exports = {
         path: `${__dirname}/static/assets`
       }
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        excerpt_separator: `<!-- end -->`
-      }
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify-cms'
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: '711rrtyeakht',
+        accessToken: '1e831909989ce0446563068ed614742f9db396857d7ccbd1597e02f39282207d'
+      }
+    },
   ]
 };

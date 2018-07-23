@@ -21,24 +21,5 @@ export const query = graphql`
         desc
       }
     }
-    allMarkdownRemark(sort: {
-      fields: [frontmatter___date],
-      order: DESC
-    }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD YYYY")
-          }
-          fields {
-            slug
-          }
-          html
-          excerpt(pruneLength: 280)
-        }
-      }
-    }
   }
 `
