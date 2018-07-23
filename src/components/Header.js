@@ -12,6 +12,7 @@ const HeaderWrapper = styled.div`
   h1 {
     img {
       height: 80px;
+      border-radius: 1rem;
     }
   }
   overflow: hidden;
