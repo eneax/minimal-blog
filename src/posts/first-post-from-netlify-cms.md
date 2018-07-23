@@ -1,12 +1,10 @@
 ---
 title: First Post from Netlify CMS
 date: '2018-07-23'
-image: /static/assets/screen-shot-2018-07-23-at-16.27.06.png
+image: /assets/netlify.png
 ---
-Netlify is just amazing!
-
-![Netlify Dashboard](/assets/screen.png)
-
-
-
 Hey, this is now in CMS!!
+
+![gatsby-config](/assets/gatsby-config.png)
+
+Netlify is just amazing!
