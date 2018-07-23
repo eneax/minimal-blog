@@ -52,6 +52,7 @@ const MainNav = styled.nav`
 export default class Header extends Component {
   componentDidUpdate = (prevProps, prevState) => {
     const { location } = this.props
+    // if we are going from home to home, don't run the animation
     if (location.pathname !== prevProps.location.pathname) {
       if (this.props.location.pathname === '/') {
         this.wrapper.animate([
@@ -81,7 +82,9 @@ export default class Header extends Component {
     const { data, location } = this.props
 
     return (
-      <HeaderWrapper 
+      <HeaderWrapper
+        // we set 'this.wrapper' = to the DOM element which contains wrapper
+        // we need it to use the Web Animations API
         isHome={location.pathname === '/'}
         ref={(wrapper) => this.wrapper = ReactDom.findDOMNode(wrapper)}
       >

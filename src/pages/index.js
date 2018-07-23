@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage
 
+// we have to name all the queries, but they cannot have the same name
 export const query = graphql`
   query SiteMeta {
     site {

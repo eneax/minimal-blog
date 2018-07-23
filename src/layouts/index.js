@@ -33,6 +33,7 @@ Layout.propTypes = {
 
 export default Layout
 
+// we cannot use query inside of the 'components folder' (only inside layouts and pages)
 export const query = graphql`
   query LayoutQuery {
     site {

@@ -1,6 +1,8 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+// We want to check if each individual node is a type of markdown
+// If so, then we attach a slug to each post
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
 
@@ -18,6 +20,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 }
 
+// Iterate over each individual post and create a page for each of them
 exports.createPages = ({ graphql, boundActionCreators}) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {   // the Promise is where we get our data from
@@ -48,3 +51,21 @@ exports.createPages = ({ graphql, boundActionCreators}) => {
     resolve()
   })
 }
+
+
+
+
+
+// getNode --> it gets the parent node
+
+/*
+basePath --> it's the base path for where the
+file is living and in our case it's living in the 'posts' folder
+*/
+
+/*
+createNodeField --> it's going to attach a field just
+like the html and frontmatter on our markdown post
+*/
+
+// value --> it's the path where the file will show up
