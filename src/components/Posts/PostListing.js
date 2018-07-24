@@ -87,7 +87,7 @@ const PostListing = ({ post }) => {
             </Link>
             <p>Posted by Minimal Blog on {post.frontmatter.date}</p>
           </PostPreview>
-          <hr/>
+          <hr />
         </Col>
       </Row>
     </Container>

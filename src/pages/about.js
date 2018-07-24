@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Footer from '../components/Footer'
 
 const Container = styled.div`
   width: 100%;
@@ -60,7 +61,8 @@ const Col = styled.div`
 
 export default class About extends Component {
   render () {
-    return <Container>
+    return (
+      <Container>
         <Row>
           <Col>
             <h1>About</h1>
@@ -75,7 +77,7 @@ export default class About extends Component {
               all proponents of simple living are ascetics. Simple living is
               distinct from those living in forced poverty, as it is a
               voluntary lifestyle choice.
-            </p>
+              </p>
 
             <p>
               Adherents may choose simple living for a variety of personal
@@ -87,11 +89,12 @@ export default class About extends Component {
               aligned with the environmentalist, anti-consumerist or
               anti-war movements, including conservation, degrowth, social
               justice, and tax resistance.
-            </p>
+              </p>
 
             <p>Read more on <a href='https://en.wikipedia.org/wiki/Simple_living' target='_blank'>Wikipedia</a>.</p>
           </Col>
         </Row>
       </Container>
+    )
   }
 }
