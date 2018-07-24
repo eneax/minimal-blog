@@ -72,7 +72,7 @@ export default class PostPage extends Component {
             <p dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html
             }} />
-            <p>Read more on <a href='https://en.wikipedia.org/wiki/Simple_living' target='_blank'>Wikipedia</a>.</p>
+            <p>Read more on <a href='https://en.wikipedia.org/wiki/Minimalism_(disambiguation)' target='_blank'>Wikipedia</a>.</p>
           </Col>
         </Row>
       </Container>
