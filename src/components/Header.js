@@ -43,6 +43,10 @@ const MainNav = styled.nav`
       a {
         text-decoration: none;
         color: #000;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         &:hover {
           border-bottom: 3px solid #2c7873;
         }
