@@ -38,7 +38,7 @@ const MainNav = styled.nav`
     display: flex;
     padding-top: 1.5rem;
     li {
-      margin-left: 10px;
+      margin-left: 15px;
       font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
       a {
         text-decoration: none;
