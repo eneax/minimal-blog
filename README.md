@@ -1,6 +1,6 @@
 # Minimal Blog
 
-A minimal blog built with [Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org/).
+A minimal blog built with [Gatsby](https://www.gatsbyjs.org/), [Netlify CMS](https://www.netlifycms.org/) and [GraphQL](https://graphql.org/).
 
 ## gatsby-starter-default
 The default Gatsby starter.
