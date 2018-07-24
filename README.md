@@ -1,6 +1,6 @@
 # Minimal Blog
 
-Work in Progress `¯\_(ツ)_/¯`
+A minimal blog built with [Gatsby](https://www.gatsbyjs.org/) and styled with [styled-components](https://www.styled-components.com/).
 
 ## gatsby-starter-default
 The default Gatsby starter.
