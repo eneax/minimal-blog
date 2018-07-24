@@ -18,7 +18,7 @@ const HeaderWrapper = styled.div`
   overflow: hidden;
   position: relative;
   height: ${({ isHome }) => (
-    isHome ? '70vh' : '20vh'
+    isHome ? '70vh' : '25vh'
   )}
 `
 
@@ -36,6 +36,7 @@ const MainNav = styled.nav`
   ul {
     list-style: none;
     display: flex;
+    padding-top: 1.5rem;
     li {
       margin-left: 10px;
       font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
@@ -57,7 +58,7 @@ export default class Header extends Component {
     if (location.pathname !== prevProps.location.pathname) {
       if (this.props.location.pathname === '/') {
         this.wrapper.animate([
-          { height: '20vh' },
+          { height: '25vh' },
           { height: '70vh' }
         ], {
           duration: 300,
@@ -68,7 +69,7 @@ export default class Header extends Component {
       } else {
         this.wrapper.animate([
           { height: '70vh' },
-          { height: '20vh' }
+          { height: '25vh' }
         ], {
           duration: 300,
           fill: 'forwards',
