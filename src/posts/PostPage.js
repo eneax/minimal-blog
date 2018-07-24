@@ -95,20 +95,3 @@ export const query = graphql`
     }
   }
 `
-
-
-
-/*
-
-return (
-      <div>
-        <span>{data.markdownRemark.frontmatter.date}</span>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{
-          __html: data.markdownRemark.html
-        }} />
-      </div>
-    )
-
-
-*/ 
