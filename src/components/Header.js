@@ -44,7 +44,7 @@ const MainNav = styled.nav`
         text-decoration: none;
         color: #000;
         &:hover {
-          border-bottom: 3px solid #000;
+          border-bottom: 3px solid #2c7873;
         }
       }
     }
