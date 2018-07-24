@@ -48,8 +48,9 @@ const Col = styled.div`
   p {
     line-height: 1.5;
     margin: 30px 0;
+    font-size: 20px;
     a {
-      color: #212529;
+      color: #2c7873;
       &:focus,
       &:hover {
       text-decoration: none;

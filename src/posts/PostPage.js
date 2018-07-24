@@ -46,6 +46,15 @@ const Col = styled.div`
   p {
     line-height: 1.5;
     margin: 30px 0;
+    font-size: 20px;
+    a {
+      color: #2c7873;
+      &:focus,
+      &:hover {
+      text-decoration: none;
+      color: #2c7873;
+      }
+    }
   }
 `
 
@@ -63,6 +72,7 @@ export default class PostPage extends Component {
             <p dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html
             }} />
+            <p>Read more on <a href='https://en.wikipedia.org/wiki/Simple_living' target='_blank'>Wikipedia</a>.</p>
           </Col>
         </Row>
       </Container>
